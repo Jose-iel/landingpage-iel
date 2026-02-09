@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IEL Technology Company - A tecnologia que transforma negócios. Software house especializada em automação, IA e soluções digitais.">
+    <meta name="keywords" content="IEL Technology, software house, automação, inteligência artificial, Nexo, SDR WhatsApp, desenvolvimento de software">
+    <meta name="author" content="IEL Technology Company">
+    <meta property="og:title" content="IEL Technology Company - A Tecnologia que Transforma Negócios">
+    <meta property="og:description" content="Software house especializada em automação, IA e soluções digitais sob medida.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#050510">
+    <meta name="color-scheme" content="dark">
+    <title>IEL Technology Company | A Tecnologia que Transforma Negócios</title>
+    <link rel="icon" type="image/png" href="images/fav-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <img src="images/variacao-fundo-escuro.svg" alt="IEL Logo" class="preloader-logo-img">
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+            <span class="preloader-text">Carregando...</span>
+        </div>
+    </div>
+
+    <!-- CURSOR CUSTOM -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- SMOOTH SCROLL WRAPPER -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- HEADER / NAV -->
+            <header id="header" role="banner">
+                <nav class="nav-container" role="navigation" aria-label="Navegação principal">
+                    <a href="#" class="nav-logo">
+                        <img src="images/variacao-fundo-escuro.svg" alt="IEL Technology Company" class="logo-img">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="#home" data-pt="Início" data-en="Home">Início</a></li>
+                        <li><a href="#about" data-pt="Sobre" data-en="About">Sobre</a></li>
+                        <li><a href="#services" data-pt="Serviços" data-en="Services">Serviços</a></li>
+                        <li><a href="#products" data-pt="Produtos" data-en="Products">Produtos</a></li>
+                        <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <button class="lang-toggle" id="langToggle" aria-label="Trocar idioma">
+                            <span class="lang-active">PT</span>
+                            <span class="lang-separator">/</span>
+                            <span class="lang-inactive">EN</span>
+                        </button>
+                        <a href="https://wa.me/5543996872138?text=Olá! Gostaria de saber mais sobre os serviços da IEL Technology." class="nav-cta" target="_blank" rel="noopener" data-pt="Fale Conosco" data-en="Contact Us">Fale Conosco</a>
+                    </div>
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <ul class="mobile-nav-links">
+                        <li><a href="#home" data-pt="Início" data-en="Home">Início</a></li>
+                        <li><a href="#about" data-pt="Sobre" data-en="About">Sobre</a></li>
+                        <li><a href="#services" data-pt="Serviços" data-en="Services">Serviços</a></li>
+                        <li><a href="#products" data-pt="Produtos" data-en="Products">Produtos</a></li>
+                        <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+                    </ul>
+                    <a href="https://wa.me/5543996872138?text=Olá! Gostaria de saber mais sobre os serviços da IEL Technology." class="mobile-cta" target="_blank" rel="noopener" data-pt="Fale Conosco" data-en="Contact Us">Fale Conosco</a>
+                </div>
+            </header>
+
+            <!-- HERO SECTION -->
+            <section id="home" class="hero-section">
+                <div class="hero-bg-layers">
+                    <div class="hero-grid-bg"></div>
+                    <div class="hero-gradient-orb hero-orb-1"></div>
+                    <div class="hero-gradient-orb hero-orb-2"></div>
+                    <div class="hero-particles" id="heroParticles"></div>
+                </div>
+                <div class="hero-content" data-speed="0.8">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span data-pt="Software House &bull; Automação &bull; IA" data-en="Software House &bull; Automation &bull; AI">Software House &bull; Automação &bull; IA</span>
+                    </div>
+                    <h1 class="hero-title split-text">
+                        <span class="hero-line" data-pt="Vem pra IEL" data-en="Come to IEL">Vem pra IEL</span>
+                        <span class="hero-line hero-highlight" data-pt="A Tecnologia que" data-en="The Technology that">A Tecnologia que</span>
+                        <span class="hero-line hero-highlight-2" data-pt="Transforma Negócios" data-en="Transforms Business">Transforma Negócios</span>
+                    </h1>
+                    <p class="hero-subtitle" data-pt="Desenvolvemos soluções digitais sob medida, automações inteligentes e agentes de IA que impulsionam o crescimento da sua empresa." data-en="We develop custom digital solutions, intelligent automations and AI agents that drive your company's growth.">
+                        Desenvolvemos soluções digitais sob medida, automações inteligentes e agentes de IA que impulsionam o crescimento da sua empresa.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="https://wa.me/5543996872138?text=Olá! Gostaria de saber mais sobre os serviços da IEL Technology." class="btn-primary" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            <span data-pt="Fale com um Especialista" data-en="Talk to a Specialist">Fale com um Especialista</span>
+                        </a>
+                        <a href="#products" class="btn-secondary">
+                            <span data-pt="Conheça Nossos Produtos" data-en="Discover Our Products">Conheça Nossos Produtos</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label" data-pt="Projetos Entregues" data-en="Projects Delivered">Projetos Entregues</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="30">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label" data-pt="Clientes Ativos" data-en="Active Clients">Clientes Ativos</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="98">0</span><span class="stat-suffix">%</span>
+                            <span class="stat-label" data-pt="Satisfação" data-en="Satisfaction">Satisfação</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span data-pt="Role para explorar" data-en="Scroll to explore">Role para explorar</span>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="about-section">
+                <div class="section-container">
+                    <div class="about-grid">
+                        <div class="about-left" data-speed="0.9">
+                            <span class="section-tag" data-pt="Quem Somos" data-en="About Us">Quem Somos</span>
+                            <h2 class="section-title split-text" data-pt="Transformamos ideias em soluções digitais de alto impacto" data-en="We transform ideas into high-impact digital solutions">
+                                Transformamos ideias em <span class="text-gradient">soluções digitais</span> de alto impacto
+                            </h2>
+                            <p class="about-text" data-pt="A IEL Technology Company é uma software house focada em criar tecnologia que realmente faz diferença. Combinamos desenvolvimento sob medida, automação inteligente e inteligência artificial para resolver problemas reais do seu negócio." data-en="IEL Technology Company is a software house focused on creating technology that truly makes a difference. We combine custom development, intelligent automation and artificial intelligence to solve real problems in your business.">
+                                A IEL Technology Company é uma software house focada em criar tecnologia que realmente faz diferença. Combinamos desenvolvimento sob medida, automação inteligente e inteligência artificial para resolver problemas reais do seu negócio.
+                            </p>
+                            <p class="about-text" data-pt="Não entregamos apenas código. Entregamos resultados. Cada projeto é pensado estrategicamente para gerar crescimento, eficiência e vantagem competitiva." data-en="We don't just deliver code. We deliver results. Every project is strategically designed to generate growth, efficiency and competitive advantage.">
+                                Não entregamos apenas código. Entregamos resultados. Cada projeto é pensado estrategicamente para gerar crescimento, eficiência e vantagem competitiva.
+                            </p>
+                            <div class="about-features">
+                                <div class="about-feature">
+                                    <div class="feature-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                                    </div>
+                                    <div>
+                                        <strong data-pt="Agilidade" data-en="Agility">Agilidade</strong>
+                                        <span data-pt="Entregas rápidas sem perder qualidade" data-en="Fast deliveries without losing quality">Entregas rápidas sem perder qualidade</span>
+                                    </div>
+                                </div>
+                                <div class="about-feature">
+                                    <div class="feature-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                                    </div>
+                                    <div>
+                                        <strong data-pt="Inovação" data-en="Innovation">Inovação</strong>
+                                        <span data-pt="Tecnologias de ponta aplicadas ao seu negócio" data-en="Cutting-edge technologies applied to your business">Tecnologias de ponta aplicadas ao seu negócio</span>
+                                    </div>
+                                </div>
+                                <div class="about-feature">
+                                    <div class="feature-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                    </div>
+                                    <div>
+                                        <strong data-pt="Confiança" data-en="Trust">Confiança</strong>
+                                        <span data-pt="Parceria sólida e transparente" data-en="Solid and transparent partnership">Parceria sólida e transparente</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-right" data-speed="1.1">
+                            <div class="about-image-wrapper">
+                                <div class="about-image-card">
+                                    <div class="code-window">
+                                        <div class="code-window-header">
+                                            <span class="dot red"></span>
+                                            <span class="dot yellow"></span>
+                                            <span class="dot green"></span>
+                                            <span class="code-filename">iel-solution.js</span>
+                                        </div>
+                                        <div class="code-window-body">
+                                            <pre><code><span class="code-keyword">const</span> <span class="code-var">iel</span> = {
+  <span class="code-prop">mission</span>: <span class="code-string">"Transformar negócios"</span>,
+  <span class="code-prop">stack</span>: [<span class="code-string">"IA"</span>, <span class="code-string">"Automação"</span>, <span class="code-string">"Web"</span>],
+  <span class="code-prop">deliver</span>: () => <span class="code-string">"Resultados reais"</span>,
+  <span class="code-prop">commitment</span>: <span class="code-keyword">Infinity</span>
+};</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floating-badge badge-1">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                    <span>100% Custom</span>
+                                </div>
+                                <div class="floating-badge badge-2">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+                                    <span>Clean Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES SECTION -->
+            <section id="services" class="services-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <span class="section-tag" data-pt="Nossos Serviços" data-en="Our Services">Nossos Serviços</span>
+                        <h2 class="section-title split-text" data-pt="Soluções completas para o seu negócio digital" data-en="Complete solutions for your digital business">
+                            Soluções completas para o seu <span class="text-gradient">negócio digital</span>
+                        </h2>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-card" data-speed="0.95">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                            </div>
+                            <h3 data-pt="Software Sob Medida" data-en="Custom Software">Software Sob Medida</h3>
+                            <p data-pt="Desenvolvimento exclusivo alinhado aos objetivos do seu negócio. Cada linha de código é pensada para resolver o seu problema específico." data-en="Exclusive development aligned with your business objectives. Every line of code is designed to solve your specific problem.">Desenvolvimento exclusivo alinhado aos objetivos do seu negócio. Cada linha de código é pensada para resolver o seu problema específico.</p>
+                            <div class="service-tags">
+                                <span>Backend</span>
+                                <span>Frontend</span>
+                                <span>APIs</span>
+                                <span>Cloud</span>
+                            </div>
+                        </div>
+                        <div class="service-card" data-speed="1.0">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h3 data-pt="Sites & Landing Pages" data-en="Websites & Landing Pages">Sites & Landing Pages</h3>
+                            <p data-pt="Sites modernos, responsivos e otimizados para conversão. Design que impressiona e performance que converte visitantes em clientes." data-en="Modern, responsive websites optimized for conversion. Design that impresses and performance that converts visitors into customers.">Sites modernos, responsivos e otimizados para conversão. Design que impressiona e performance que converte visitantes em clientes.</p>
+                            <div class="service-tags">
+                                <span>Responsivo</span>
+                                <span>SEO</span>
+                                <span>UI/UX</span>
+                                <span>Performance</span>
+                            </div>
+                        </div>
+                        <div class="service-card" data-speed="1.05">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                            </div>
+                            <h3 data-pt="Automação & IA" data-en="Automation & AI">Automação & IA</h3>
+                            <p data-pt="Automatize processos repetitivos e libere sua equipe para o que importa. Inteligência artificial aplicada para decisões mais rápidas e precisas." data-en="Automate repetitive processes and free your team for what matters. Applied artificial intelligence for faster and more accurate decisions.">Automatize processos repetitivos e libere sua equipe para o que importa. Inteligência artificial aplicada para decisões mais rápidas e precisas.</p>
+                            <div class="service-tags">
+                                <span>Chatbots</span>
+                                <span>Workflows</span>
+                                <span>IA</span>
+                                <span data-pt="Integrações" data-en="Integrations">Integrações</span>
+                            </div>
+                        </div>
+                        <div class="service-card" data-speed="0.95">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                            </div>
+                            <h3 data-pt="E-commerce" data-en="E-commerce">E-commerce</h3>
+                            <p data-pt="Lojas virtuais completas e personalizadas. Da vitrine ao checkout, tudo pensado para maximizar suas vendas online." data-en="Complete and customized online stores. From showcase to checkout, everything designed to maximize your online sales.">Lojas virtuais completas e personalizadas. Da vitrine ao checkout, tudo pensado para maximizar suas vendas online.</p>
+                            <div class="service-tags">
+                                <span data-pt="Loja Virtual" data-en="Online Store">Loja Virtual</span>
+                                <span data-pt="Pagamentos" data-en="Payments">Pagamentos</span>
+                                <span data-pt="Gestão" data-en="Management">Gestão</span>
+                                <span>Analytics</span>
+                            </div>
+                        </div>
+                        <div class="service-card" data-speed="1.0">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+                            </div>
+                            <h3 data-pt="Treinamento em IA" data-en="AI Training">Treinamento em IA</h3>
+                            <p data-pt="Capacite sua equipe para usar inteligência artificial no dia a dia. Treinamentos práticos e personalizados para o seu contexto." data-en="Empower your team to use artificial intelligence daily. Practical and customized training for your context.">Capacite sua equipe para usar inteligência artificial no dia a dia. Treinamentos práticos e personalizados para o seu contexto.</p>
+                            <div class="service-tags">
+                                <span>Workshops</span>
+                                <span>ChatGPT</span>
+                                <span>Prompts</span>
+                                <span data-pt="Produtividade" data-en="Productivity">Produtividade</span>
+                            </div>
+                        </div>
+                        <div class="service-card" data-speed="1.05">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                            </div>
+                            <h3 data-pt="Configuração Tech" data-en="Tech Setup">Configuração Tech</h3>
+                            <p data-pt="Setup completo de infraestrutura tecnológica. Configuramos, integramos e otimizamos todas as ferramentas que seu negócio precisa." data-en="Complete technology infrastructure setup. We configure, integrate and optimize all the tools your business needs.">Setup completo de infraestrutura tecnológica. Configuramos, integramos e otimizamos todas as ferramentas que seu negócio precisa.</p>
+                            <div class="service-tags">
+                                <span>Infra</span>
+                                <span>DevOps</span>
+                                <span>Setup</span>
+                                <span data-pt="Suporte" data-en="Support">Suporte</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRODUCTS SECTION -->
+            <section id="products" class="products-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <span class="section-tag" data-pt="Nossos Produtos" data-en="Our Products">Nossos Produtos</span>
+                        <h2 class="section-title split-text" data-pt="Produtos próprios que revolucionam processos" data-en="Own products that revolutionize processes">
+                            Produtos próprios que <span class="text-gradient">revolucionam processos</span>
+                        </h2>
+                    </div>
+
+                    <!-- NEXO - PRODUTO DESTAQUE -->
+                    <div class="product-featured" id="nexo">
+                        <div class="product-featured-bg">
+                            <div class="product-glow"></div>
+                        </div>
+                        <div class="product-featured-content">
+                            <div class="product-featured-left" data-speed="0.9">
+                                <span class="product-badge">
+                                    <span class="badge-pulse"></span>
+                                    <span data-pt="Produto Destaque" data-en="Featured Product">Produto Destaque</span>
+                                </span>
+                                <h3 class="product-featured-title">
+                                    <span class="nexo-logo">NEXO</span>
+                                </h3>
+                                <p class="product-featured-tagline" data-pt="Seu SDR por WhatsApp que nunca dorme" data-en="Your WhatsApp SDR that never sleeps">
+                                    Seu SDR por WhatsApp que <span class="text-gradient">nunca dorme</span>
+                                </p>
+                                <p class="product-featured-desc" data-pt="O Nexo é um agente de inteligência artificial que atende, qualifica e converte leads pelo WhatsApp 24/7. Ele conversa como uma pessoa real, faz perguntas estratégicas, envia materiais e agenda reuniões — tudo automaticamente." data-en="Nexo is an artificial intelligence agent that serves, qualifies and converts leads via WhatsApp 24/7. It talks like a real person, asks strategic questions, sends materials and schedules meetings — all automatically.">
+                                    O Nexo é um agente de inteligência artificial que atende, qualifica e converte leads pelo WhatsApp 24/7. Ele conversa como uma pessoa real, faz perguntas estratégicas, envia materiais e agenda reuniões — tudo automaticamente.
+                                </p>
+                                <ul class="product-features-list">
+                                    <li data-pt="Atendimento 24/7 — nunca perde um lead" data-en="24/7 service — never loses a lead">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                        Atendimento 24/7 — nunca perde um lead
+                                    </li>
+                                    <li data-pt="Conversa natural — não parece robô" data-en="Natural conversation — doesn't seem like a bot">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                        Conversa natural — não parece robô
+                                    </li>
+                                    <li data-pt="Qualificação inteligente de leads" data-en="Intelligent lead qualification">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                        Qualificação inteligente de leads
+                                    </li>
+                                    <li data-pt="Integração com qualquer API aberta" data-en="Integration with any open API">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                        Integração com qualquer API aberta
+                                    </li>
+                                    <li data-pt="Follow-ups automáticos que convertem" data-en="Automatic follow-ups that convert">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                                        Follow-ups automáticos que convertem
+                                    </li>
+                                </ul>
+                                <a href="https://wa.me/5543996872138?text=Olá! Quero saber mais sobre o Nexo - SDR por WhatsApp." class="btn-primary btn-nexo" target="_blank" rel="noopener">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                    <span data-pt="Quero o Nexo no meu negócio" data-en="I want Nexo in my business">Quero o Nexo no meu negócio</span>
+                                </a>
+                            </div>
+                            <div class="product-featured-right" data-speed="1.1">
+                                <div class="nexo-demo-card">
+                                    <div class="phone-mockup">
+                                        <div class="phone-notch"></div>
+                                        <div class="phone-screen">
+                                            <div class="chat-header-mock">
+                                                <div class="chat-avatar">N</div>
+                                                <div class="chat-info">
+                                                    <span class="chat-name">Nexo SDR</span>
+                                                    <span class="chat-status" data-pt="online agora" data-en="online now">online agora</span>
+                                                </div>
+                                            </div>
+                                            <div class="chat-messages">
+                                                <div class="chat-msg received">
+                                                    <p data-pt="Olá! 👋 Vi que você se interessou pelos nossos serviços. Posso te ajudar?" data-en="Hello! 👋 I saw you were interested in our services. Can I help you?">Olá! 👋 Vi que você se interessou pelos nossos serviços. Posso te ajudar?</p>
+                                                    <span class="msg-time">10:30</span>
+                                                </div>
+                                                <div class="chat-msg sent">
+                                                    <p data-pt="Sim! Quero saber mais sobre automação" data-en="Yes! I want to know more about automation">Sim! Quero saber mais sobre automação</p>
+                                                    <span class="msg-time">10:31</span>
+                                                </div>
+                                                <div class="chat-msg received">
+                                                    <p data-pt="Perfeito! Para te indicar a melhor solução, me conta: qual o segmento da sua empresa e quantos leads vocês recebem por mês? 🎯" data-en="Perfect! To recommend the best solution, tell me: what's your company's segment and how many leads do you receive per month? 🎯">Perfeito! Para te indicar a melhor solução, me conta: qual o segmento da sua empresa e quantos leads vocês recebem por mês? 🎯</p>
+                                                    <span class="msg-time">10:31</span>
+                                                </div>
+                                                <div class="chat-msg typing">
+                                                    <div class="typing-dots">
+                                                        <span></span><span></span><span></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OUTROS PRODUTOS -->
+                    <div class="products-grid">
+                        <div class="product-card" data-speed="0.95">
+                            <div class="product-card-icon artflow-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                            </div>
+                            <h3>Artflow</h3>
+                            <p data-pt="Sistema inteligente de aprovação de mídias sociais. Organize, revise e aprove conteúdos com fluxos automatizados e colaboração em tempo real." data-en="Intelligent social media approval system. Organize, review and approve content with automated workflows and real-time collaboration.">
+                                Sistema inteligente de aprovação de mídias sociais. Organize, revise e aprove conteúdos com fluxos automatizados e colaboração em tempo real.
+                            </p>
+                            <div class="product-card-tags">
+                                <span data-pt="Mídias Sociais" data-en="Social Media">Mídias Sociais</span>
+                                <span data-pt="Aprovação" data-en="Approval">Aprovação</span>
+                                <span data-pt="Colaboração" data-en="Collaboration">Colaboração</span>
+                            </div>
+                            <a href="https://wa.me/5543996872138?text=Olá! Quero saber mais sobre o Artflow." class="product-card-link" target="_blank" rel="noopener">
+                                <span data-pt="Saiba mais" data-en="Learn more">Saiba mais</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        <div class="product-card" data-speed="1.05">
+                            <div class="product-card-icon autoflyer-icon">
+                                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6M9 15l3 3 3-3"/></svg>
+                            </div>
+                            <h3>AutoFlyer</h3>
+                            <p data-pt="Geração automática de encartes profissionais. Crie materiais de divulgação em segundos com templates inteligentes e integração com seu catálogo." data-en="Automatic generation of professional flyers. Create marketing materials in seconds with intelligent templates and catalog integration.">
+                                Geração automática de encartes profissionais. Crie materiais de divulgação em segundos com templates inteligentes e integração com seu catálogo.
+                            </p>
+                            <div class="product-card-tags">
+                                <span data-pt="Encartes" data-en="Flyers">Encartes</span>
+                                <span data-pt="Automação" data-en="Automation">Automação</span>
+                                <span>Design</span>
+                            </div>
+                            <a href="https://wa.me/5543996872138?text=Olá! Quero saber mais sobre o AutoFlyer." class="product-card-link" target="_blank" rel="noopener">
+                                <span data-pt="Saiba mais" data-en="Learn more">Saiba mais</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HOW IT WORKS / PROCESS SECTION -->
+            <section class="process-section">
+                <div class="section-container">
+                    <div class="section-header">
+                        <span class="section-tag" data-pt="Como Trabalhamos" data-en="How We Work">Como Trabalhamos</span>
+                        <h2 class="section-title split-text" data-pt="Do primeiro contato à entrega final" data-en="From first contact to final delivery">
+                            Do primeiro contato à <span class="text-gradient">entrega final</span>
+                        </h2>
+                    </div>
+                    <div class="process-timeline">
+                        <div class="process-line"></div>
+                        <div class="process-step" data-step="01">
+                            <div class="process-step-number">01</div>
+                            <div class="process-step-content">
+                                <h3 data-pt="Diagnóstico" data-en="Diagnosis">Diagnóstico</h3>
+                                <p data-pt="Entendemos seu negócio, suas dores e seus objetivos. Mapeamos oportunidades de tecnologia e automação." data-en="We understand your business, your pain points and your goals. We map technology and automation opportunities.">Entendemos seu negócio, suas dores e seus objetivos. Mapeamos oportunidades de tecnologia e automação.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-step="02">
+                            <div class="process-step-number">02</div>
+                            <div class="process-step-content">
+                                <h3 data-pt="Estratégia" data-en="Strategy">Estratégia</h3>
+                                <p data-pt="Desenhamos a solução ideal com escopo claro, prazos definidos e tecnologias adequadas ao seu contexto." data-en="We design the ideal solution with clear scope, defined deadlines and technologies suited to your context.">Desenhamos a solução ideal com escopo claro, prazos definidos e tecnologias adequadas ao seu contexto.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-step="03">
+                            <div class="process-step-number">03</div>
+                            <div class="process-step-content">
+                                <h3 data-pt="Desenvolvimento" data-en="Development">Desenvolvimento</h3>
+                                <p data-pt="Construímos com agilidade, entregas parciais e comunicação constante. Você acompanha cada etapa." data-en="We build with agility, partial deliveries and constant communication. You follow every step.">Construímos com agilidade, entregas parciais e comunicação constante. Você acompanha cada etapa.</p>
+                            </div>
+                        </div>
+                        <div class="process-step" data-step="04">
+                            <div class="process-step-number">04</div>
+                            <div class="process-step-content">
+                                <h3 data-pt="Entrega & Suporte" data-en="Delivery & Support">Entrega & Suporte</h3>
+                                <p data-pt="Entregamos, treinamos sua equipe e oferecemos suporte contínuo. Seu sucesso é o nosso sucesso." data-en="We deliver, train your team and offer continuous support. Your success is our success.">Entregamos, treinamos sua equipe e oferecemos suporte contínuo. Seu sucesso é o nosso sucesso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS SECTION (DISABLED BUT READY) -->
+            <!--
+            <section class="testimonials-section" id="testimonials">
+                <div class="section-container">
+                    <div class="section-header">
+                        <span class="section-tag" data-pt="Depoimentos" data-en="Testimonials">Depoimentos</span>
+                        <h2 class="section-title split-text" data-pt="O que nossos clientes dizem" data-en="What our clients say">
+                            O que nossos clientes <span class="text-gradient">dizem</span>
+                        </h2>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Placeholder para depoimento do cliente."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">JD</div>
+                                <div>
+                                    <strong>João da Silva</strong>
+                                    <span>CEO, Empresa X</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Placeholder para depoimento do cliente."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">MS</div>
+                                <div>
+                                    <strong>Maria Santos</strong>
+                                    <span>Diretora, Empresa Y</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Placeholder para depoimento do cliente."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">PL</div>
+                                <div>
+                                    <strong>Pedro Lima</strong>
+                                    <span>Fundador, Empresa Z</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+
+            <!-- CTA SECTION -->
+            <section class="cta-section">
+                <div class="cta-bg-effects">
+                    <div class="cta-orb cta-orb-1"></div>
+                    <div class="cta-orb cta-orb-2"></div>
+                </div>
+                <div class="section-container">
+                    <div class="cta-content">
+                        <h2 class="cta-title split-text" data-pt="Pronto para transformar seu negócio?" data-en="Ready to transform your business?">
+                            Pronto para <span class="text-gradient">transformar</span> seu negócio?
+                        </h2>
+                        <p class="cta-text" data-pt="Fale com nosso time e descubra como a tecnologia pode acelerar seus resultados. Sem compromisso, sem enrolação." data-en="Talk to our team and discover how technology can accelerate your results. No commitment, no hassle.">
+                            Fale com nosso time e descubra como a tecnologia pode acelerar seus resultados. Sem compromisso, sem enrolação.
+                        </p>
+                        <a href="https://wa.me/5543996872138?text=Olá! Gostaria de agendar uma conversa sobre os serviços da IEL Technology." class="btn-primary btn-large" target="_blank" rel="noopener">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            <span data-pt="Iniciar Conversa Agora" data-en="Start Conversation Now">Iniciar Conversa Agora</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT / FOOTER -->
+            <footer id="contact" class="footer-section" role="contentinfo">
+                <div class="section-container">
+                    <div class="footer-grid">
+                        <div class="footer-brand">
+                            <img src="images/logo-e-text-branca.svg" alt="IEL Technology Company" class="footer-logo">
+                            <p data-pt="A tecnologia que transforma negócios. Soluções digitais sob medida para empresas que querem crescer." data-en="The technology that transforms business. Custom digital solutions for companies that want to grow.">
+                                A tecnologia que transforma negócios. Soluções digitais sob medida para empresas que querem crescer.
+                            </p>
+                            <div class="footer-social">
+                                <a href="https://instagram.com/ielcompany" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                                </a>
+                                <a href="https://linkedin.com/company/ielcompany" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-links-col">
+                            <h4 data-pt="Serviços" data-en="Services">Serviços</h4>
+                            <ul>
+                                <li><a href="#services" data-pt="Software Sob Medida" data-en="Custom Software">Software Sob Medida</a></li>
+                                <li><a href="#services" data-pt="Sites & Landing Pages" data-en="Websites & Landing Pages">Sites & Landing Pages</a></li>
+                                <li><a href="#services" data-pt="Automação & IA" data-en="Automation & AI">Automação & IA</a></li>
+                                <li><a href="#services" data-pt="E-commerce" data-en="E-commerce">E-commerce</a></li>
+                                <li><a href="#services" data-pt="Treinamento em IA" data-en="AI Training">Treinamento em IA</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col">
+                            <h4 data-pt="Produtos" data-en="Products">Produtos</h4>
+                            <ul>
+                                <li><a href="#nexo">Nexo SDR</a></li>
+                                <li><a href="#products">Artflow</a></li>
+                                <li><a href="#products">AutoFlyer</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h4 data-pt="Contato" data-en="Contact">Contato</h4>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                                    <a href="tel:+5543996872138">(43) 99687-2138</a>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                    <a href="mailto:josehenriqueiel@gmail.com">josehenriqueiel@gmail.com</a>
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>Rua Firmino Barbosa, 50<br>CEP 86047-480</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2025 IEL Technology Company. CNPJ: 65.030.961/0001-94. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+                    </div>
+                </div>
+
+                <!-- INFINITE SCROLL TEXT -->
+                <div class="footer-marquee">
+                    <div class="marquee-track">
+                        <span>IEL TECHNOLOGY &bull; AUTOMAÇÃO &bull; INTELIGÊNCIA ARTIFICIAL &bull; SOFTWARE SOB MEDIDA &bull; NEXO SDR &bull; ARTFLOW &bull; AUTOFLYER &bull;&nbsp;</span>
+                        <span>IEL TECHNOLOGY &bull; AUTOMAÇÃO &bull; INTELIGÊNCIA ARTIFICIAL &bull; SOFTWARE SOB MEDIDA &bull; NEXO SDR &bull; ARTFLOW &bull; AUTOFLYER &bull;&nbsp;</span>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5543996872138?text=Olá! Gostaria de saber mais sobre os serviços da IEL Technology." class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="code/main.js" defer></script>
+</body>
+</html>
