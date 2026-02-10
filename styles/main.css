@@ -1749,7 +1749,7 @@ button:focus-visible {
     font-family: var(--font-display);
     font-size: 0.8rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.25);
     letter-spacing: 4px;
     text-transform: uppercase;
     white-space: nowrap;
@@ -1821,7 +1821,7 @@ button:focus-visible {
 
     .about-grid {
         grid-template-columns: 1fr;
-        gap: 48px;
+        gap: 32px;
     }
 
     .about-right {
@@ -1842,6 +1842,36 @@ button:focus-visible {
 
     .about-feature {
         max-width: 400px;
+    }
+
+    .about-image-wrapper {
+        overflow: hidden;
+        padding: 20px 0;
+    }
+
+    .code-window-body {
+        padding: 16px;
+        font-size: 0.7rem;
+    }
+
+    .code-window-body pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    .floating-badge {
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    .badge-1 {
+        top: -10px;
+        right: 0;
+    }
+
+    .badge-2 {
+        bottom: -10px;
+        left: 0;
     }
 
     .services-grid {

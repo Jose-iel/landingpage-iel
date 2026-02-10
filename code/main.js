@@ -246,6 +246,15 @@
 
     /* ---------- HERO ANIMATIONS ---------- */
     function initHeroAnimations() {
+        var isMobile = window.innerWidth <= 768;
+
+        if (isMobile) {
+            /* Mobile: no animation for text/buttons, only counters */
+            animateCounters();
+            return;
+        }
+
+        /* Desktop: full animation */
         const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
         tl.fromTo('.hero-badge', {
@@ -314,24 +323,6 @@
             duration: 0.6,
             clearProps: 'all',
         }, '-=0.3');
-
-        /* Force hero elements visible - fallback on scroll or after timeout */
-        function forceHeroVisible() {
-            var heroEls = '.hero-badge, .hero-line, .hero-subtitle, .hero-ctas, .hero-ctas > *, .btn-primary, .btn-secondary, .stat-item, .stat-divider, .hero-scroll-indicator, .hero-stats';
-            document.querySelectorAll(heroEls).forEach(function(el) {
-                el.style.opacity = '1';
-                el.style.visibility = 'visible';
-                el.style.transform = 'none';
-            });
-            animateCounters();
-        }
-
-        window.addEventListener('scroll', function onFirstScroll() {
-            forceHeroVisible();
-            window.removeEventListener('scroll', onFirstScroll);
-        }, { once: true });
-
-        setTimeout(forceHeroVisible, 2000);
     }
 
     /* ---------- COUNTER ANIMATION ---------- */
