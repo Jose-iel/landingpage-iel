@@ -248,55 +248,90 @@
     function initHeroAnimations() {
         const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
-        tl.from('.hero-badge', {
+        tl.fromTo('.hero-badge', {
             y: 30,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.8,
+            clearProps: 'all',
         })
-        .from('.hero-line', {
+        .fromTo('.hero-line', {
             y: 80,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 1,
             stagger: 0.15,
+            clearProps: 'all',
         }, '-=0.4')
-        .from('.hero-subtitle', {
+        .fromTo('.hero-subtitle', {
             y: 30,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.8,
+            clearProps: 'all',
         }, '-=0.5')
-        .from('.hero-ctas > *', {
+        .fromTo('.hero-ctas > *', {
             y: 20,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.6,
             stagger: 0.1,
+            clearProps: 'all',
         }, '-=0.4')
-        .from('.stat-item', {
+        .fromTo('.stat-item', {
             y: 20,
             opacity: 0,
+        }, {
+            y: 0,
+            opacity: 1,
             duration: 0.6,
             stagger: 0.1,
+            clearProps: 'all',
             onComplete: animateCounters,
         }, '-=0.3')
-        .from('.stat-divider', {
+        .fromTo('.stat-divider', {
             scaleY: 0,
             opacity: 0,
+        }, {
+            scaleY: 1,
+            opacity: 1,
             duration: 0.4,
             stagger: 0.1,
+            clearProps: 'all',
         }, '-=0.5')
-        .from('.hero-scroll-indicator', {
+        .fromTo('.hero-scroll-indicator', {
             opacity: 0,
+        }, {
+            opacity: 1,
             duration: 0.6,
+            clearProps: 'all',
         }, '-=0.3');
 
-        /* Force hero elements visible after timeline completes or after timeout */
-        setTimeout(function() {
-            var heroEls = '.hero-badge, .hero-line, .hero-subtitle, .hero-ctas > *, .stat-item, .stat-divider, .hero-scroll-indicator';
+        /* Force hero elements visible - fallback on scroll or after timeout */
+        function forceHeroVisible() {
+            var heroEls = '.hero-badge, .hero-line, .hero-subtitle, .hero-ctas, .hero-ctas > *, .btn-primary, .btn-secondary, .stat-item, .stat-divider, .hero-scroll-indicator, .hero-stats';
             document.querySelectorAll(heroEls).forEach(function(el) {
                 el.style.opacity = '1';
+                el.style.visibility = 'visible';
                 el.style.transform = 'none';
             });
             animateCounters();
-        }, 3000);
+        }
+
+        window.addEventListener('scroll', function onFirstScroll() {
+            forceHeroVisible();
+            window.removeEventListener('scroll', onFirstScroll);
+        }, { once: true });
+
+        setTimeout(forceHeroVisible, 2000);
     }
 
     /* ---------- COUNTER ANIMATION ---------- */
