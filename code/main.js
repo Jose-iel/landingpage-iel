@@ -287,10 +287,23 @@
             opacity: 0,
             duration: 0.6,
         }, '-=0.3');
+
+        /* Force hero elements visible after timeline completes or after timeout */
+        setTimeout(function() {
+            var heroEls = '.hero-badge, .hero-line, .hero-subtitle, .hero-ctas > *, .stat-item, .stat-divider, .hero-scroll-indicator';
+            document.querySelectorAll(heroEls).forEach(function(el) {
+                el.style.opacity = '1';
+                el.style.transform = 'none';
+            });
+            animateCounters();
+        }, 3000);
     }
 
     /* ---------- COUNTER ANIMATION ---------- */
+    var countersAnimated = false;
     function animateCounters() {
+        if (countersAnimated) return;
+        countersAnimated = true;
         DOM.statNumbers.forEach(num => {
             const target = parseInt(num.getAttribute('data-count'));
             const obj = { val: 0 };
